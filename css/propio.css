@@ -1,0 +1,12 @@
+header {
+    height: 56px;
+}
+main{
+    margin-top: 20px;
+}
+
+.container article {
+        border-bottom: 1px solid grey;
+        margin: 15px 0;
+        padding-bottom: 5px;
+}
