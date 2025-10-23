@@ -111,7 +111,7 @@
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="..">Urtzi Diaz Arberas</a>
+          <a class="navbar-brand" href="..">Andriana Ilkiv</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -156,12 +156,25 @@
 				<h3>Ejercicio 2.1</h3>
 				<?php 
 						//TO-DO
+            require_once __DIR__.'\..\recursos\bombilla.php';
+
+            // Crear objeto
+            $bombilla = new bombilla();
+            $bombilla->encender();
+            //var_dump($bombilla->getEncendida());
+            $bombilla->apagar();
+            //var_dump($bombilla->getEncendida());
 						?>
 			</article>
 			<article id="ejer2_2">
 				<h3>Ejercicio 2.2</h3>
 				<?php 
 						//TO-DO
+            require_once __DIR__.'\..\recursos\trigonometria.php';
+            $cateto1 = 10; 
+            $cateto2 = 15;
+            $hipotenusa = calculaHipotenusa($cateto1,$cateto2);
+            echo "<p>Un triángulo rectángulo con catetos de ".$cateto1." y ".$cateto2.", tiene una hipotenusa de ". $hipotenusa."</p>";
 						?>
 			</article>
 			<article id="ejer2_3">
