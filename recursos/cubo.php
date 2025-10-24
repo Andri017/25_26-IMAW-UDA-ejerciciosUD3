@@ -1,16 +1,20 @@
 <?php
     class Cubo{
         private bool $resuelto;
-        private num $tamanio;
+        private int $tamanio;
 
-        public function __construct() {
-            $this->$resulto=true;
-        }
-        
-        public function __construct() {
-            $this->$tamanio=true;
+        public function __construct(int $tamanio) {
+            $this->resuelto=true;
+            $this->tamanio=$tamanio;
         }
 
-        public function getRevuelto():void{};
+        public function getRevuelto():bool{
+            return $this->resuelto;
+        }
+
+        public function revolver():void{
+               $this->resuelto=false;
+               echo "<p>Ahora está todo revuelto</p>";
+        }
     }
 ?>
